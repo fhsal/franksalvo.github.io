@@ -3,8 +3,88 @@
 <html lang="eng-us">
 
 <head> 
-<meta charset="UTF-8">
-   <title> My First Page </title>
+    <meta charset="UTF-8">
+    <title>Basic CSS Example</title>
+  ​
+    <!-- Introducing the Style Tag! -->
+    <!-- ========================== -->
+  ​
+    <!-- Now you can customize the look of your sites. Each rule in the style tag changes the appearance of its associated element (notice how each rule names an element from the HTML body). -->
+    <style>
+      /*
+              NOTE: Commenting is a bit different in CSS. 
+            They start with forward-slash + asterisk 
+            and end with back-slash + asterisk.
+            */
+      /* h1 heading tag */
+      
+      h1 {
+        /* Put a 15-pixel margin at the bottom of the heading. */
+        margin-bottom: 15px;
+        /* Change the size of your font to 60 pixels high. */
+        font-size: 60px;
+        /* This will color the heading font white. */
+        color: white;
+        /* Align the text to the center of its enclosing element (e.g. div). */
+        text-align: center;
+        /* Underline the text. */
+        text-decoration: underline;
+        /* The background of the heading element will now be black. */
+        background-color: black;
+      }
+      /* h2 heading tags */
+      
+      h2 {
+        /* Put a 15-pixel margin at the top of all h2 headings. */
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 40px;
+        text-align: left;
+      }
+      /* h3 heading tags */
+      
+      h3 {
+        margin-top: 15px;
+        font-size: 20px;
+        text-align: center;
+      }
+      /* All img tags */
+      
+      img {
+        /* 
+                  Center a block element in the middle of its enclosing tag.
+                  When you use the "auto" rule on both left and right margins, 
+                  your browser will do the math necessary to center a block element.
+                  */
+        margin-left: 15;
+        margin-right: auto;
+        /* Block display (more on this later) */
+        display: block;
+      }
+      /* All p tags */
+      
+      p {
+        text-align: center;
+        font-size: 20px;
+        /* Bold the text. */
+        font-weight: bold;
+      }
+      /* All unordered list tags */
+      
+      ul {
+        text-align: center;
+        font-size: 35px;
+        /* Give an element a solid border. */
+        border-style: solid;
+        /* Render the border 5 pixels thick. */
+        border-width: 5px;
+        /* Include bullets in the content flow. */
+        /* More info here: http://www.w3schools.com/cssref/pr_list-style-position.asp */
+        list-style-position: inside;
+      }
+    </style>
+  </head>
+  ​
 
 </head>
 
@@ -12,11 +92,43 @@
 
     <!-- Header -->
 
-    <h1> Hello World!</h1>
+    <h1> Student Bio</h1>
+
+    <h2>Frank Salvo</h2>
 
 
-    <img src=https://placehold.it/200x200 alt="Frank Salvo"/>
+    <img src=data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAHoAowMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABQYBAwQCBwj/xAA4EAACAQMDAgQEBAQHAAMAAAABAgMABBEFEiExQQYTUWEicYGRFCMyoUKx0eEHFTNSwfDxF2KC/8QAGQEAAwEBAQAAAAAAAAAAAAAAAAIEAwEF/8QAJBEAAwACAwABBQADAAAAAAAAAAECAxESITFRBBNBQmEiMjP/2gAMAwEAAhEDEQA/APhtKUoAUpSgBSlZx6igAK3W9rcXUgjtoZJZP9qKSas3hnwib8pPqTGGEjKRD9cnv7CvpFhb6Vo0Hkw20YJH6d+QvuQOp9yc06les4+X6o+aab4J1C6k23M0FouPiMhzt+eOB96lG8G6PAn5uo3FxJnG2EAc/Zqus13E4KW6BUXnaoGDz6dqjNV1KaOFlgto8njDNgn69qZVi3pIV4suttleTwzpDHH4eYexnJP8hQeDNLnDeVdy28g6JK4/5X/mt0U7RpJJIzLEvxMv6to9/UVMWiQzRCaO4ix6MQM8ZBHtz19qdufjoOHXr2VC88D3iZ/By+cB2KkZ+R71Xr7TL2wYi6t3j9yOPvX0hZTbSt8cUUec7mcrkfLOKjtY1ayvn2xyzSKGxyvHz96ZYlfgjtx6fPDWKsF5pUE4Mlsyox7D9J/pUJPC8EhSRCrD171jeOofZpNKvDVSlKzGFKUoAUpSgBSlKAFKVkdaAMhc9K+jeFfB8dpbrqGrRBpjhkjfGIx7+rfyqF8F6XCh/wA21BQY0bFuh6Mw6t8h/P5VZLzUr29dEiYLHISqs5wo9SPTFU48T1yM3a3ol7m7tkO7eq7cHhc5HoKjdQ8VRJuWG3TB6c8Vxpov4xo4IrtJbqQbsBxhYx3+fXrivcOiWl1IbLS4xezq253dxkc8DOQOfSh4lvs797XhEyeIJHkJHwg9hXkXE19a3EpuYlMWD5TE7nHcj5cfeuzVbX/JbgQ6ppa5n/0pVCspUEjOATyak4tDh0vS7bUxA1w10QY4kh3MhIBwc9AAeT05rjxwuzv3rf5IexsprWdGuXO9xgrGcnBHT+wrZcxMZ40ga6gjPwqIGUcHnsOOSeM1Kori5DBFt4ipbe7kRg9eT8ufoarup394bqSGwliZQdiuvwl/dc4x368/tRKdPo5yS9I6+ihW8aBJHYpkEynJJ7iswvDGESUCRM5YKCG/9r22jX8dxHBNbhTKu6Nt4UNke/PXjHrXYugaw5JttJvpo0A3DG/b68gD7VcmktbJ67ZGI4WT4S23vmpXVNBZ7NJi+5WXcrbCCD6A9DW6PwzqV1YS3MEStNC+17XG2Xae+01v0/WSNNl0zUAqBSMblIdTnofeltql0KumUGeJoZCj9R+9a6n9VtlljLR8ujEHmoGoMuPhRVjrktmKUpWQ4pSlAClKUAK6LC2kvLyG2i/XK4UH0960VafAFosl/cX0oBjtIwFGOsjnCj7bvtT455UkLT4y2WmeztbS3QTn8qKILa2sbfG3u5/hB6+pzUTFqkYd2nhaRFOxI0fYq5zj14+nTNSlxHZSbbzU72O2W4zi32vuIBxnAHr09QKr7pDcXTzPKttA8qrGyWzAEBj0XnkADvnJ6nmvU0vCLt9l50G68PT6fbWiFbW/BZruYqyx7d3f4hkYyAc8ED0rXc2kGlyTC01FYkuMKnk5ZFUHdkkdjx2HzGRmq61bSyyWt5I8CyXgLwJliyIM4Lnt/wAVZDax2vh/TLm/lfzgCkUWBsL7SwD8r2289OT14qXJPHvZrPZv1axsb9LBBdC4uoRJ8LQbXOQCF3bsDPfHqenNSn4uOTw/Z6dOkTXTXLhRHIFijVcDAHJYADA45yBkc4itElha+is/OjbzAFPmK2cNycZ4PXbj+tWnUdEggvm1OQJawQEFmbODj9IGP4RnPucmp2zRIi76KY2gjguEtrwjfavEFycEkgYwORgcjP71TtCntG16VNZhaWG6d0nnnZnkeNxgFGB7HHOenfit1z4g/DXEVxuLLE+YSByef1N/uPHP/ccdp4luL+yaK6EYy2bm58sE7WbKtjgZBHbHHPYVtjTUsV7Z0X7aXHNIt3rDiO32NZqAWfysrnjor/DnGOw4IqI1TxLLcXAk0qW6gQSbxuCmTr13jnqTxnAzxiuvxBo8DyWdpYbpLv8ACiQyZ3LORydpHU7fi6feqw6rBCGLgOSfgKcjOOM+n09aoiZa2BdPCvjiS1Ex1KNrqdwdtxt3SAH1IxwPrWpEh1tr1LRTPckkwvOeAg54xyMZwMn74qrQ3TvLG0+AFP8AABnHyqQsc287akuFSPLR5BXeDlRjHyP2xXXCXaFaPM0USskYOJyxWRFxt9iOfoard/F5U7Y6HkVf/wALFrGlXFxDEsNxbhWUL/E3cH54qm6vHwGK7WB+IelY5Vyn+o7jeqImlZNYqEpFKUoAUpSgDNW7wqZI9EuGiLKZLjBIOP0qD1+tVGrh4cmaLw0xTAIu5MsRngolVfSf9UY5/wDQt/hee2S7W7njSSRIZBJJs3MT2UA854GBXBqOoavrUsk2h6SGjUEtL/qAbh2DdDj51C6YoEzSNdzQupJVo1BO7p1PTP8AWgfWE0xLOC4kW0ZiRChKjBOc4HOO4q6o1WyaGaoNE1vVJpDJv3ogVmmkzhenPPT2qUmtpLRt19bOC22R/j6Oeo9O1Qtnq2r6HM5tJVVi+4vhXy3I5P34NSOleIJdWvWi8SX8kkEkTKjMoXynPQjAx9/2qf6iKpdFOKuNf5eExZX1usrzzqqsFBQEZUt0+h4HT0FRWreKNS1RY7Nrl/KC7SGGO2CeP+4qdXT445VeJEubRHHmDbvKLjqyr1U9Mg8GoHxVbwebH/l9tBawsD+WHPLKeuckdcjtnjgVDG29MqycV2iDd4w+Ji0sartBV8fIiua2kVjMCCqyYDKp7Zrfd+WbYFncXCth4yuDjHX+1RrbAGySc8fKvR47jRJD72SNvrMkN7JMrSkdIgspUx44Ug+wAr3Jdpe3kl3LHJdSOHMjSYB5XAOB6H6dOlRqSTFDGFZoxzgIDj3ratxGduI40cHiVcoR8wOP2rRTo60gQY5AGc5GOR1HvW55S7yLO8vDE7VPAOfSpC70vzLO21C2kFwpjDXiIoVrcrgNkDseCD05rg1SDyJFZX80P+Yzr+lt3OR+/wBq6nsXROaZrkmnWk9mFjZd4kQnqcjj9sGofVkWaCS5jGxGPKk5OepPyr0sMLWks8ryl2IEajHc9Tn5GtNyzG3cMQdwyff3pbhabE3pkGaxWTWK8krFKUoAUpSgDNXn/D8xS6XqkcqGTyMTCMDOcjHbntVFqy+ANSGneIoi7ERzxtC2PccfuBWuGuNpmeVbhl61nTLaDRF1LTodgVHDF8kkA9Ovfd69PrUV4ZudWs5VnsoorxUUedDKw+JecAHBAwauWqsNV8DH8AN8oZIpUA2nqM8DgdvpnpmqhZO1vaK0mpXdhk7Da2Z8xsAfqbd+n6fL1FX8ty9ksosGpazpeq2KX0NlC8s2VdJYlBDjG4N/EPnz86+ey30AvzNaaba7S+5I2jI2jj4R8XI+YPWrymlRapHctZagupTbPzIWi8m4ZcYyOzEdmAzxjmqD/l507W1t7vfsEqFJHTIeInBJ98fYqRSRpbRqkXvw74rsNOijtriJLOdcktGRPBgnoRncvHYH+lW6bw3pHiaIX0VwVn3ZH5glRSD0we3scVSPCcMGuO6RRLCSCkfmAMZsg9Dg4Py6V2aNoHinQvEEUekQyixeU+ZIHXy2XPJwenYepqe5lPrpjptnfP8A4TrJZsG1QG8C7FlEWE24wAVyf51TfEXg1tDuLiNWu5FWMBLhrfETsecbs8YGee57V94t0aFXaZ1LE9QMDH/FVfxj4hitLSSK32SMV3uzR+Ynl554GflXIy3s7SSR8EFs6TmKeR0kwPh55B966DpzsqFmfYeEcxkDHsTwR/Q1IzG21XWG2XHkJK/+ubfJBJ64GOO371YbTRrV9kEkbzyLLtO19zkA8sB278nv7mq3bQrZUbW6u9HvHQboZ4CY23rkOvdHU9VPpXXq67bK2n09FTTdRJcQ5z5EiH4o8+gJyPY11+J4IZNUtPw9pNC4CJKjr8RYtj6kj966dK04S6Lr9m+MW03nWxPZxuU4z6j+Vd5eM42VVQn5JOcMgyffJ/pWy8IFoXySSevrWIl8qQRyDKBumcd/7Vq1icOwVeAcHAFdy1qNnNbrRF1ilK8opFKUoAUpSgBXqN2R1ZGIZTkEdjXmsjrQB93/AMPtVgvdFlljbbLOwEqcfC+NpP8AI/UVF3lhDZWlhFHHGJbu8kid0YneSSQxPrgf+4r514R159F1DLuy28vwyFeq/wD2x3+XcV9AnuYZbNrDUo2ez3i5sryHPIzu69MjnuOCavxvmtklzwevweNQivLDUCLCOSC7iVkVgORkcMvrz9Ks3inS31DSbO5uLaP8QZoZJ4s8M5GxwPZgfuK59SntdS0RJFkS4nKkW9zsGSw52n3747jn1rzo/im01iySwv0lW4Rxu3c5IOSo6ZI6e+M0r2CO+1FpbQtpgbaTlN6BVYHqAijoe4x0Cj0qXu9b/DfkLOImWPeWmTcABkdj1/vVY1jSJtSjtQbUXHksSlxHIVbntu/Uh+/Pau3U5k0y3jN4qSSN/p27Scu+P3+Q61k0mMm14ceu6hrN/HJ+EveCAUW2Uhs9eT3GPYVWHuNUtYZYI5k8hojvXcdqswzwmeCev/eJxLHUrm6/GAm0tiFzbqMqX/iJAAPsAf2qNfR5LmTfLDHBZQ/HLO7cOeefXp2HHv6PKSDZUotsSy3FwrMVblGfbuJPcjsKuPhPVLe3vbu7vXhaC4ZOXBVmf4gMHJzx646ZrjuIbK3BWBo10+VfLJktyZf1DoCBjnkNz2qtzw3MtwIdPhaVGPwKTkKvYMc9a21yAu0eoaDNrT2ltYu7yOxN9LIX2FTyVJ6dOMexrrubSDSoJ5HkQK8hIPdQ3H16VQ4PDN9Z5nuVVWXBAU52n15rzqurXF4kcSu+M8gtkH61zh3pHGeNaighkEtvKHhYMDjv3/nVVuZPMkJ+1duoz4jW3XsSTUdWX1GT9Ea45/JilKVIailKUAKUpQApSlACrb4P8XPpDC0vC72RORznZ9O4qpVnNNFuXtHKlUtM/QGjJp8sEk0Yg8i6IYiMjaT/ALsdM+/WpWDSrKFW/KSXdkfmDPbHWvz9o+vXulK8cMrNbyfrhLcH3HofcV9J8LeN7K7CwXtyY5Oi+d1P/wCu5qlUr8fZLUVH9L8WMRjjh2oCcAEE9B0AFZNtBd4kubZZZI2DJ5kfKn2NcRvoyYpAQdpHU5Brv/HKRkMKVy0cTRu2NtxHCBxkAnFcc2lRTSB55XJByEB+AEdCB7V6kvuOtcr6kOgY59q4pY20Qcuim21J5pjczllKqGkaRGU5GCvRcD2ry+n/AIWIMnkRuR8XJGPXmu+61IdPMCiq1rfiK2gjaMuDkEH4q3Sf5F7fhz3d0sSyo8iyL2x0H0qmaxqMCOwt1G89SOgrn1HWvNzHaKI4+gwMVDMxYkk5JpcmZT1JvMfJlmLMWJyTXmlKiZqKUpQApSlAClKUAKUpQApSlACsisUoAkrDXNT08BbS8kRB/ATlfsam4PH2qoAJkhkHsCpqpUp1dLxiuJfqLt/8gTkc2S/ST+1c0/ji7kBCQBfctVSpTfev5F+3PwS914i1C4BzKEB/2CouSRpGLOxYnuTXilK7qvWOpS8FKUpDopSlAClKUAKUpQB//9k= alt="Frank Salvo">
     
+    <p>Description</p>
+
+
+    WLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 
+    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+    aliquip ex ea commodo consequat. Duis aute irure dolor in 
+    reprehenderit in voluptate velit esse cillum dolore
+
+   
+    
+
+    
+    <!-- Section 2: Contact Info -->
+    <section>
+        ​
+              <!-- h2: Tier-2 Headline -->
+              <h2>Contact Info</h2>
+        ​
+              <!-- Unordered list -->
+              <ul>
+                <li><strong>Email:</strong> <a href="#">fhsalvo@yahoo.com</a></li>
+                <li><strong>Github:</strong> <a href="#">tbd</a></li>
+                <li><strong>Portfolio:</strong> <a href="#">coming soon</a></li>
+              </ul>
+        ​
+            </section>
+        
+
+
 
 </body>
 </html>
